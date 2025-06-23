@@ -52,7 +52,6 @@ export default class Carousel {
     const offset = -slideWidth * this.currentSlideIndex;
     this.inner.style.transform = `translateX(${offset}px)`;
 
-    // Обновляем видимость стрелок
     this.arrowLeft.style.display = this.currentSlideIndex === 0 ? 'none' : '';
     this.arrowRight.style.display = this.currentSlideIndex === this.slides.length - 1 ? 'none' : '';
   }
